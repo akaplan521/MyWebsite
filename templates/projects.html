@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styleprojects.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="hometab">
+            <a href="https://akapla11.w3.uvm.edu">Home</a>
+        </div>
+        
+        <div class="projecttab">
+            <a href="/projects.html">Projects</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="mailto:akapla11@uvm.edu">
+                <img src="images\email-icon.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/alexa-kaplan521/" target="_blank">
+                <img src="images/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/akaplan521" target="_blank">
+                <img src="images/github-logo.png" alt="GitHub">
+            </a>
+        </div>   
+    </div>
+
+    <div class="projects-section">
+        <div class="accordion">
+            <button class="accordion-button">Climate Kitchen App</button>
+            <div class="accordion-content">
+                <p><strong>Role:</strong> Team Lead</p>
+                <p><strong>Tools:</strong> Swift, Python, SQLite, SQL, Firebase, REST APIs</p>
+                <ul>
+                    <li>Led a team in developing a sustainability-focused iOS app that helps users find, create, and filter recipes based on seasonal, local, and dietary preferences.</li>
+                    <li>Collaborated with UVM staff and the Climate Kitchen team to define requirements and deliver features aligned with educational and environmental goals.</li>
+                    <li>Designed and implemented a normalized relational database using SQLite, linking recipes to ingredients, nutrition facts, and seasonal data.</li>
+                    <li>Used Python for backend scripts to clean and transform CSV datasets from the USDA FDC Foundation Foods database.</li>
+                    <li>Integrated RESTful APIs from fdc.nal.usda.gov to dynamically fetch ingredient details, nutrient data, and food categories.</li>
+                    <li>Wrote complex SQL queries for real-time filtering by seasonality, energy usage, and dietary restrictions.</li>
+                    <li>Built the front-end using Swift, enabling intuitive navigation across recipe views, ingredient details, and user profiles.</li>
+                    <li>Connected user preferences and login functionality to Firebase, storing location, allergies, and sustainability metrics per profile.</li>
+                    <li>Focused on clean UI/UX design while ensuring efficient client-server communication between the database, APIs, and app logic.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Machine Learning Phishing Detection Web App</button>
+            <div class="accordion-content">
+                <p><strong>Event:</strong> UVM Hackathon Entry</p>
+                <p><strong>Tools:</strong> Python, scikit-learn, NLTK, Flask, HTML, CSS, JavaScript</p>
+                <ul>
+                    <li>Built a machine learning web application to detect phishing emails using a random forest classifier developed with scikit-learn in Python.</li>
+                    <li>Utilized NLTK for natural language processing—parsing, tokenizing, and extracting features from email text for model training.</li>
+                    <li>Engineered features based on linguistic patterns, email structure, and metadata to enhance prediction accuracy.</li>
+                    <li>Developed a dynamic, interactive front end using HTML, CSS, and JavaScript, allowing users to input and evaluate emails in real time.</li>
+                    <li>Hosted the app locally with Flask, connecting the trained model to the user interface for instant phishing detection results.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Food Pantry Inventory Management System</button>
+            <div class="accordion-content">
+                <p><strong>Event:</strong> UVM Second Annual Hackathon</p>
+                <p><strong>Tools:</strong> Python, Flask, HTML, CSS, JavaScript, SQLite</p>
+                <ul>
+                    <li>Collaborated with a team to develop an inventory management web application for UVM’s campus food pantry organization.</li>
+                    <li>Met directly with the client to gather system requirements and define key features for efficient food tracking and stock updates.</li>
+                    <li>Built a full-stack web application using Flask for the backend and SQLite for lightweight, reliable data storage.</li>
+                    <li>Designed an intuitive front-end interface using HTML, CSS, and JavaScript for smooth user interaction.</li>
+                    <li>Connected frontend and backend seamlessly with Python to enable real-time updates and inventory status changes.</li>
+                    <li>Developed a business model and proposal for future scalability and implementation of the system within campus operations.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Bechdel Project Draft</button>
+            <div class="accordion-content">
+                <p><strong>Tools:</strong> R, ggplot2, dplyr, caret, rpart, Python</p>
+                <ul>
+                    <li>Analyzed a dataset of 1,793 films spanning 1970–2013 to assess their female representation using the Bechdel Test.</li>
+                    <li>Cleaned and transformed data to prepare for statistical analysis and machine learning models.</li>
+                    <li>Created data visualizations, including bar plots, scatter plots, and box plots, to identify trends and correlations.</li>
+                    <li>Implemented k-Nearest Neighbors (kNN) classification to predict Bechdel Test results using standardized data.</li>
+                    <li>Developed and pruned a classification tree model to evaluate explanatory variables, identifying significant limitations due to imbalanced data.</li>
+                    <li>Recommended improvements, including diversifying datasets and expanding predictor variables, to enhance model performance and reduce selection bias.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Facial Recognition Software using Raspberry Pi</button>
+            <div class="accordion-content">
+                <p><strong>Event:</strong> UVM CS Fair Submission 2022</p>
+                <p><strong>Tools:</strong> Python, OpenCV, Raspberry Pi, Pi Camera</p>
+                <ul>
+                    <li>Developed a facial recognition system using OpenCV in Python, capable of identifying and verifying faces.</li>
+                    <li>Trained the model using a labeled dataset of facial images, applying face detection and encoding techniques for accurate classification.</li>
+                    <li>Deployed the system on a Raspberry Pi using Raspberry Pi OS.</li>
+                    <li>Integrated a Raspberry Pi Camera Module to capture real-time input, enabling the system to run independently of external devices.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Smithbase</button>
+            <div class="accordion-content">
+                <p><strong>Context:</strong> Software Engineering Class Project</p>
+                <p><strong>Tools:</strong> MySQL, Python, HTML, CSS, JavaScript</p>
+                <ul>
+                    <li>Built a social media-style web application for users to view, rate, and review different “Smiths”, each with a dedicated profile page.</li>
+                    <li>Designed and implemented a relational database using MySQL, storing user data, reviews, ratings, and detailed Smith profiles.</li>
+                    <li>Developed the frontend using HTML, CSS, and JavaScript, with dynamic page content that updated based on user interactions and database queries.</li>
+                    <li>Connected the frontend to the backend through Python scripts and SQL queries to serve dynamic content efficiently.</li>
+                    <li>Emphasized modular code structure and collaborative development practices as part of a semester-long team project.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Cloud-based Document-Model Datastore for Books</button>
+            <div class="accordion-content">
+                <p><strong>Tools:</strong> Firebase, Python, pyparsing</p>
+                <ul>
+                    <li>Developed a custom cloud-based datastore using Firebase to manage document-model data structures with limited native query capabilities.</li>
+                    <li>Designed and implemented a custom query language, enabling support for complex filters, logical operations, and multi-field constraints.</li>
+                    <li>Used pyparsing in Python to tokenize and parse query strings into structured, executable query objects.</li>
+                    <li>Built a backend algorithm to interpret parsed queries and simulate advanced filtering, sorting, and conditional logic on Firebase data.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion-button');
+        accordions.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
