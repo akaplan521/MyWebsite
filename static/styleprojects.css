@@ -147,7 +147,7 @@ body {
 
 .projects-section {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: aliceblue;
   font-family: Arial, sans-serif;
 }
 
@@ -174,10 +174,10 @@ body {
 }
 
 .accordion-content {
-  padding: 15px 25px;
+  padding: 0 25px;               
   background-color: white;
   max-height: 0;
-  overflow: hidden;
+  overflow: hidden;              
   transition: max-height 0.3s ease-out;
   border-left: 2px solid #d6e6f2;
   border-right: 2px solid #d6e6f2;
@@ -189,6 +189,7 @@ body {
   color: #4a5251;
 }
 
+
 .accordion-content ul {
   padding-left: 20px;
   margin-top: 10px;
@@ -196,4 +197,14 @@ body {
 
 .accordion-content p {
   margin: 5px 0;
+}
+
+.accordion-button::after {
+  content: '\25BC'; /* Downward arrow */
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.accordion-button.active::after {
+  transform: rotate(-180deg); /* Flip arrow up */
 }
