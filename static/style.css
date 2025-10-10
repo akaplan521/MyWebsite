@@ -6,14 +6,14 @@ body {
   font-family: 'Josefin Sans';
   margin: 0;
   padding: 0;
-  color:#343F3E;
-  background-color: aliceblue;
+  color:#96aab0;
+  background-color: rgb(19, 32, 45);
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: aliceblue;
+  background-color: (19, 32, 45);
   padding: 14px 20px;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar a {
-  color: #343F3E;
+  color: #96aab0;
   text-decoration: none;
   padding: 14px 20px;
   font-weight: 700;
@@ -32,7 +32,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: aliceblue;
+  background-color: rgb(19, 32, 45);
   color: #505A5B;
   /*text-shadow: 3px 3px 0px rgb(0, 0, 0); */
   /*text-decoration: underline;*/
@@ -82,9 +82,9 @@ body {
 }
 
 .social-icons img:hover {
-  width: 40px;
-  height: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 44px;
+  height: 44px;
+  filter: drop-shadow(0 8px 10px rgba(124, 124, 124, 0.35));
   vertical-align: middle;
 }
 
