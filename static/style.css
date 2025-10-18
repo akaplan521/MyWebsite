@@ -6,7 +6,7 @@ body {
   font-family: 'Josefin Sans';
   margin: 0;
   padding: 0;
-  color:#96aab0;
+  color:#c7dbd8;
   background-color: rgb(19, 32, 45);
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar a {
-  color: #96aab0;
+  color: #c7dbd8;
   text-decoration: none;
   padding: 14px 20px;
   font-weight: 700;
@@ -82,10 +82,48 @@ body {
 }
 
 .social-icons img:hover {
-  width: 44px;
-  height: 44px;
   filter: drop-shadow(0 8px 10px rgba(124, 124, 124, 0.35));
   vertical-align: middle;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+
+.projects-section {
+  padding: 20px;
+  background-color: rgb(19, 32, 45);
+}
+
+.projects-section h1 {
+  text-align: center;
+  color: #333;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgb(19, 32, 45);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+  color: #4c86dc;
+}
+
+.project ul {
+  margin: 10px 0;
+  padding: 0 20px;
+  list-style: disc;
+}
+
+.project p {
+  margin: 5px 0;
+  color: #4a5251;
 }
 
 
@@ -110,8 +148,62 @@ body {
     padding: 10px;
   }
 
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-  }
+}
+
+
+.accordion-button {
+  background-color: rgb(216, 234, 255);
+  color: #343F3E;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  border: 2px solid rgb(83, 89, 94);
+  border-radius: 6px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 12px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.accordion-button:hover {
+  background-color: rgb(178, 209, 240);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-content {
+  padding: 0 25px;               
+  background-color: rgb(178, 209, 240);
+  max-height: 0;
+  overflow: hidden;              
+  transition: max-height 0.3s ease-out;
+  border-left: 2px solid rgb(83, 89, 94);
+  border-right: 2px solid rgb(83, 89, 94);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #262929;
+}
+
+
+.accordion-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.accordion-content p {
+  margin: 5px 0;
+}
+
+.accordion-button::after {
+  content: '\25BC'; 
+  float: right;
+  transition: transform 0.4s ease;
+}
+
+.accordion-button.active::after {
+  transform: rotate(-180deg); 
 }
