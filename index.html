@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexa Kaplan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo">home</a>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<!-- hero -->
+<section id="hero">
+  <div class="container">
+    <h1 class="hero-name"><span>Alexa Kaplan</span></h1>
+    <p class="hero-role" id="role-text"><span class="cursor"></span></p>
+    <p class="hero-desc">
+      Recent CS and Statistics grad from UVM. Statistical thinker and problem solver.
+    </p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">My projects</a>
+      <a href="#contact" class="btn-outline">Contact me</a>
+    </div>
+  </div>
+</section>
+
+<!-- about section -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">background</p>
+    <h2 class="section-title">About me</h2>
+    <div class="about-grid">
+      <div class="about-headshot">
+        <img src="images/DSC_0065.jpeg" alt="Alexa Kaplan" class="headshot-img">
+      </div>
+      <div class="about-bio">
+        <p>I'm a recent CS graduate from the University of Vermont, where 
+          I worked on various <strong>collaborative projects</strong> and built 
+          solutions as part of a team. My coursework and projects have centered 
+          around the intersection of <strong>data science, machine learning, and software engineering</strong>.
+          <br>
+           I'm drawn to roles where I can apply my skills to real engineering problems.
+        </p>
+        <br>
+      </div>
+      <div class="about-facts">
+        <div class="fact-item">
+          <span class="fact-label">Degree</span>
+          <span class="fact-value">B.A. Computer Science, University of Vermont</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Graduated</span>
+          <span class="fact-value">May 2025</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Focus areas</span>
+          <span class="fact-value">Data Science, Softawre Development, Machine Learning, Computability and Complexity Theory</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- project section -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label">selected works</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-banner">
+            <h3 class="project-name">Evolving Movement in Simulated Robots</h3>
+            <p class="project-class">Evolutionary Robotics</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akaplan521/CS3060/tree/finalProject" class="project-link">GitHub</a>
+            <a href="https://youtu.be/g1vmqLV0eas?si=jthI0WCLZZ4IoFRn" class="project-link">Demo</a>
+          </div>
+        </div>
+        <ul class="project-desc">
+          <li>Designed and implemented an AI system in Python using PyBullet and Pyrosim to build and
+evolve virtual quadruped robots with neural networks through fitness-based selection</li>
+          <li>Instrumented simulations to compute and log real-time performance metrics(distance traveled,
+movement ratio, and joint velocities)</li>
+          <li>Performed guided A/B testing using measures of fitness, emphasizing sustained forward motion</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">A/B testing</span>
+          <span class="tag">Neural Network</span>
+          <span class="tag">PyBullet</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-banner">
+            <h3 class="project-name">ML Web App for Phishing Detection</h3>
+            <p class="project-class">UVM Hackathon 2024 - 2nd Place</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akaplan521/hackathon2024" class="project-link">GitHub</a>
+          </div>
+        </div>
+          <ul class="project-desc">
+            <li>Developed a basic full-stack web app for classification of emails as "spam" or "ham"</li>
+            <li>RandomForestClassifier + CountVectorizer for the ML model, 
+              NLTK for text preprocessing, and pandas/numpy for the training data</li>
+            <li>A simple multi-page Flask UI styled with HTML/CSS, featuring a text form to POST
+              emails, dynamically re-rendering the page with results. </li>
+          </ul>        
+        <div class="project-tags">
+          <span class="tag">Python Flask</span>
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">NLTK</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Natural Language Processing</span>
+          <span class="tag">Pandas/NumPy</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-banner">
+            <h3 class="project-name">Climate Kitchen App</h3>
+            <p class="project-class">Mobile App Development</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/akaplan521/ClimateKitchenApp" class="project-link">GitHub</a>
+          </div>
+        </div>
+          <ul class="project-desc">
+            <li>Developed an app for the university’s Climate Kitchen team of faculty and educators</li>
+            <li>Led the development team using Agile methodology; organized sprints, 
+              delegated feature ownership, and coordinated iterative development</li>
+            <li>Python backend that integrated REST API calls to the USDA FoodData 
+              Central database alongside a local SQLite database for user accounts, recipes, and profile data</li>
+            <li>Built natively for iOS using Swift and SwiftUI, with a multi-view 
+              architecture and a polished user interface designed from an initial app mockup</li>
+          </ul>        
+        <div class="project-tags">
+          <span class="tag">Python Flask</span>
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">NLTK</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Natural Language Processing</span>
+          <span class="tag">Firebase</span>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- skills section -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-groups">
+      <div>
+        <p class="skill-group-label">Languages</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Swift</span>
+          <span class="skill-tag">HTML/CSS/PHP</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SAS</span>
+        </div>
+      </div>
+      <div>
+        <p class="skill-group-label">Frameworks & libraries</p>
+        <div class="skill-tags">
+          <span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">NLTK</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">gRPC</span>
+        </div>
+      </div>
+      <div>
+        <p class="skill-group-label">Tools & infrastructure</p>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">REST API</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-inner">
+      <p class="contact-tagline">
+        I'm actively looking for <strong>full-time roles</strong> in AI engineering, Data science, Software engineering - full-stack.
+      </p>
+      <a href="mailto:alexakaplan9@gmail.com" class="contact-email">alexakaplan9@gmail.com</a>
+      <div class="social-links">
+        <a href="https://github.com/akaplan521" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/alexa-kaplan521/" class="social-link">LinkedIn</a>
+        <a href="images/Alexa Kaplan Resume.pdf" class="social-link">Resume ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Alexa Kaplan · 2026
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

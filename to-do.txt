@@ -1,3 +1,2 @@
-- combine index and profile pages into one
-- merge styling into one file
-- add reactjs elements
+- fill out project stuff and deploy projects
+- 
